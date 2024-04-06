@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --font-regular: 12px;
+    --font-small: 10px;
+    --font-medium: 20px;
+    --font-large: 40px;
+    --font-family: "Roboto", sans-serif;
+
+    --black: #141414;
+    --white: #FFFFFC;
+    --grey: rgba(135,135,135,0.2); /*make this 20% opacity*/
+    --light-grey: #A6A7B3;
+    --medium-grey: #545458;
+    --dark-grey: #333333;
+    --rose: #F94E9B;
+    --violet: #910BEA;
+    --dark-blue: #4A10D1;
+    --blue: #687FE9;
+    --light-blue: #4CC9F0;
+
+    /*gradient*/
+    --gradient-rv: linear-gradient(85deg, var(--rose) 5%, var(--violet) 95%);
+    --gradient-bb: linear-gradient(85deg, var(--dark-blue) 2%, var(--violet) 113%);
+    --gradient-vb: linear-gradient(85deg, var(--violet) 5%, var(--blue) 95%);
+}
+
