@@ -105,11 +105,6 @@ nav {
 }
 
 /*********** HOME **********/
-#home_logo {
-    width: 500px;
-    height: auto;
-}
-
 .homeCover {
     padding: 5rem 0 5rem 0;
     margin: 1rem 0 1rem 0;
@@ -159,7 +154,7 @@ nav {
 
 /*********** LOGO **********/
 #logo .colourCatg {
-    margin-bottom: 12rem;
+    margin-bottom: 5rem;
 }
 
 /*********** COLOURS **********/

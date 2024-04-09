@@ -105,8 +105,8 @@ nav {
 }
 
 /*********** HOME **********/
-#home_logo {
-    width: 500px;
+.home_logo img{
+    width: 400px;
     height: auto;
 }
 
