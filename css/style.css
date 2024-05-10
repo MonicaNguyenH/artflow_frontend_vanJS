@@ -748,7 +748,7 @@ fieldset {
     }
 
     .l-col-2-1 {
-        grid-template-columns: 0.8fr 1fr;
+        grid-template-columns: 0.6fr 1fr;
     }
 
     .l-col-2-2 {
@@ -777,7 +777,69 @@ fieldset {
     }
 }
 
+/*CAROUSEL at Color section*/
 
+.carousel {
+    width: 1150px;
+    height: 100vh;
+    position: relative;
+    left: 75px;
+}
+
+.slide {
+    margin-left: 180px;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    top: 12%;
+    z-index: 2;
+    color: var(--white);
+    background-color: var(--grey);
+    width: 60px;
+    height: 60px;
+    border-radius: .45rem;
+    padding: 0.5 rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.carousel-button.prevBtn {
+    transform: scaleX(-1);
+    left: 1rem;
+}
+
+.carousel-button.nextBtn {
+    right: -10rem;
+}
+
+.gradient-2 {
+    text-align: right;
+    line-height: 7px;
+}
+
+.gradient-hex {
+    padding-top: 7px;
+}
+
+.white {
+    background-color: white;
+}
+
+
+/*CAROUSEL at Color section*/
 /* SMALL ONLY
 
 @media screen and (max-width: 39.9375em) {
