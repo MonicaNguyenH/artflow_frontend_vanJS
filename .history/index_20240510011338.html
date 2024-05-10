@@ -139,22 +139,22 @@
                 <div class="subMark"></div>
                 <p class="subCaption">Quiz</p>
             </div>
-            <div class="colourCatg row l-col-2-2" style="column-gap: 3rem;">
+            <div class="colourCatg row l-col-2-1" style="column-gap: 3rem;">
                 <div class="coloursContent col">
                     <p class="secHead">Question</p>
                     <p class="colourDesc">Which artist is famous for his use of vibrant, colorful patterns in his paintings, often depicting Tahitian landscapes and Polynesian women?</p>
-                    <div id="alert-container">
-                        <div id="alertBox"></div>
-                    </div>
                 </div>
                 <div class="quizButtons col">
-                    <button class="option" id="Vincent" onclick="selectOption('vincent')">Vincent van Gogh</button>
-                    <button class="option" id="Henri" onclick="selectOption('henri')">Henri Matisse</button>
-                    <button class="option" id="Pablo" onclick="selectOption('pablo')">Pablo Picasso</button>
-                    <button class="option" id="Paul" onclick="selectOption('paul')">Paul Gauguin</button>
+                    <button id="Vincent" onclick="selectOption('vincent')">Vincent van Gogh</button>
+                    <button id="Henri" onclick="selectOption('henri')">Henri Matisse</button>
+                    <button id="Pablo" onclick="selectOption('pablo')">Pablo Picasso</button>
+                    <button id="Paul" onclick="selectOption('paul')">Paul Gauguin</button>
 
-                    <button class="submitButton" onclick="checkAnswer()">Submit</button>
+                    <button onclick="checkAnswer()">Submit</button>
                 </div>
+                <div id="alert-container"></div>
+            </div>
+            <div id="alert-container">
             </div>
         </section>
 

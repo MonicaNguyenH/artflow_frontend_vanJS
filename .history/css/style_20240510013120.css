@@ -802,7 +802,7 @@ input:checked + .slider:before {
 }
 
 .submitButton:hover,
-.submitButton:active {
+.submitButton:focus {
     background: var(--gradient-rv);
 }
 

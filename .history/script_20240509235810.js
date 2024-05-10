@@ -15,9 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const gridCol = document.querySelector('.grid-col');
   const gridGutter = document.querySelector('.grid-gutter');
 
-  const overlayMargin = document.getElementById('grid-margin-overlay');
-  const overlayCol = document.getElementById('grid-col-overlay');
-  const overlayGutter = document.getElementById('grid-gutter-overlay');
+  const overlayMargin = document.getElementById('.grid-margin-overlay');
+  const overlayCol = document.getElementById('.grid-col-overlay');
+  const overlayGutter = document.getElementById('.grid-gutter-overlay');
+
+  overlayMargin.style.display = 'none';
+  overlayCol.style.display = 'none';
+  overlayGutter.style.display = 'none';
 
   gridMargin.addEventListener('mouseover', () => {
     overlayMargin.style.display = 'block';
@@ -41,5 +45,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
   gridGutter.addEventListener('mouseout', () => {
     overlayGutter.style.display = 'none';
+  });
+});
+
+//Another Girdjs
+
+//grid-margin
+document.addEventListener("DOMContentLoaded", function() {
+  const gridMargin = document.querySelectorAll('.grid-margin');
+  const marginOverlay = document.getElementById('grid-margin-overlay');
+  
+  gridMargin.forEach(margin => {
+    margin.addEventListener('mouseenter', function() {
+      const description = this.getAttribute('data-description');
+      marginOverlay.textContent = description;
+      marginOverlay.style.display = 'flex';
+    });
+    
+    gridMargin.addEventListener('mouseleave', function() {
+      marginOverlay.style.display = 'none';
+    });
   });
 });
