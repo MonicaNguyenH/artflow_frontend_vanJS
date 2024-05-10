@@ -801,11 +801,6 @@ input:checked + .slider:before {
     cursor: pointer;
 }
 
-.submitButton:hover,
-.submitButton:active {
-    background: var(--gradient-rv);
-}
-
 #alert-container {
     margin-top: 2rem;
     width: 100%;

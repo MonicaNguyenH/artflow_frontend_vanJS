@@ -790,7 +790,7 @@ input:checked + .slider:before {
 }
 
 .submitButton {
-    width: 200px;
+    width: 400px;
     height: 50px;
     background: var(--gradient-bb);
     border-radius: 25px;
@@ -799,11 +799,6 @@ input:checked + .slider:before {
     border: 0;
     margin: 2rem;
     cursor: pointer;
-}
-
-.submitButton:hover,
-.submitButton:active {
-    background: var(--gradient-rv);
 }
 
 #alert-container {

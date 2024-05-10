@@ -133,27 +133,56 @@
                 </div>
             </div>
         </section>
-
-        <section id="quiz">
+        
+        <section id="grid">
             <div class="subhead">
                 <div class="subMark"></div>
-                <p class="subCaption">Quiz</p>
+                <p class="subCaption">Grid Layout</p>
             </div>
-            <div class="colourCatg row l-col-2-2" style="column-gap: 3rem;">
-                <div class="coloursContent col">
-                    <p class="secHead">Question</p>
-                    <p class="colourDesc">Which artist is famous for his use of vibrant, colorful patterns in his paintings, often depicting Tahitian landscapes and Polynesian women?</p>
-                    <div id="alert-container">
-                        <div id="alertBox"></div>
+            <div class="grid-img">
+                <img src="img/grid.svg" alt="grid"/>
+            </div>
+        </section>
+
+        <section id="gridJs">
+            <div class="subhead">
+                <div class="subMark"></div>
+                <p class="subCaption">Grid Layout</p>
+            </div>
+            <div class="grid-img">
+                <div class="grid-bg">
+                    <div class="grid-margin"></div>
+
+                    <div class="grid-col"></div>
+                    <div class="grid-gutter"></div>
+                    <div class="grid-col"></div>
+                    <div class="grid-gutter"></div>
+                    <div class="grid-col"></div>
+                    <div class="grid-gutter"></div>
+                    <div class="grid-col"></div>
+                    
+                    <div class="grid-margin"></div>
+                </div>
+
+                <div id="grid-margin-overlay class="grid-margin-overlay">
+                    <div class="grid-overlay-bg">
+                        <h1 class="grid-overlay-h1">Margin</h1>
+                        <p class="grid-overlay-p">10px</p>
                     </div>
                 </div>
-                <div class="quizButtons col">
-                    <button class="option" id="Vincent" onclick="selectOption('vincent')">Vincent van Gogh</button>
-                    <button class="option" id="Henri" onclick="selectOption('henri')">Henri Matisse</button>
-                    <button class="option" id="Pablo" onclick="selectOption('pablo')">Pablo Picasso</button>
-                    <button class="option" id="Paul" onclick="selectOption('paul')">Paul Gauguin</button>
 
-                    <button class="submitButton" onclick="checkAnswer()">Submit</button>
+                <div id="grid-col-overlay">
+                    <div class="grid-overlay-bg">
+                        <h1 class="grid-overlay-h1">Columns</h1>
+                        <p class="grid-overlay-p">4px</p>
+                    </div>
+                </div>
+
+                <div id="grid-gutter-overlay">
+                    <div class="grid-overlay-bg">
+                        <h1 class="grid-overlay-h1">Gutter</h1>
+                        <p class="grid-overlay-p">30px</p>
+                    </div>
                 </div>
             </div>
         </section>
