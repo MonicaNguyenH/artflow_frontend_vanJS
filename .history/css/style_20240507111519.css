@@ -522,13 +522,12 @@ input:checked + .slider:before {
 }
 
 /*** GRID OVERLAY ***/
-.grid-margin-overlay,
-.grid-col-overlay,
-.grid-gutter-overlay {
+.grid-margin-overlay {
     background: var(--dark-grey);
     width: 120px;
     border-radius: 15px;
     padding: 1rem;
+    col-gap: 2rem;
     display: flex;
     color: var(--white);
 }
@@ -537,7 +536,6 @@ input:checked + .slider:before {
     font: var(--roboto-bold-20);
     color: var(--rose);
     margin: 0;
-    margin-bottom: 0.5rem;
 }
 
 .grid-overlay-p {

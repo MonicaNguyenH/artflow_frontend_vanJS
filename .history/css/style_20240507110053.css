@@ -497,6 +497,8 @@ input:checked + .slider:before {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 10px;
+    gap: 21px;
     overflow: hidden;
 }
 
@@ -510,40 +512,9 @@ input:checked + .slider:before {
 .grid-gutter {
     height: 652px;
     width: 100%;
-    background-color: var(--white);
+    background-color: red;
 }
 
-.grid-margin {
-    width: 8px;
-}
-
-.grid-gutter {
-    width: 24px;
-}
-
-/*** GRID OVERLAY ***/
-.grid-margin-overlay,
-.grid-col-overlay,
-.grid-gutter-overlay {
-    background: var(--dark-grey);
-    width: 120px;
-    border-radius: 15px;
-    padding: 1rem;
-    display: flex;
-    color: var(--white);
-}
-
-.grid-overlay-h1 {
-    font: var(--roboto-bold-20);
-    color: var(--rose);
-    margin: 0;
-    margin-bottom: 0.5rem;
-}
-
-.grid-overlay-p {
-    font: var(--roboto-regular-16);
-    margin: 0;
-}
 
 
 /*********** ICONOGRAPHY **********/
