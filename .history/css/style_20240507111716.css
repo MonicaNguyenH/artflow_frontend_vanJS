@@ -523,8 +523,7 @@ input:checked + .slider:before {
 
 /*** GRID OVERLAY ***/
 .grid-margin-overlay,
-.grid-col-overlay,
-.grid-gutter-overlay {
+.grid-col-overlay {
     background: var(--dark-grey);
     width: 120px;
     border-radius: 15px;

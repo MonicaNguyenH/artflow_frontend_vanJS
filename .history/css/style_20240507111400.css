@@ -522,22 +522,17 @@ input:checked + .slider:before {
 }
 
 /*** GRID OVERLAY ***/
-.grid-margin-overlay,
-.grid-col-overlay,
-.grid-gutter-overlay {
+.grid-margin-overlay {
     background: var(--dark-grey);
-    width: 120px;
+    width: 100px;
     border-radius: 15px;
     padding: 1rem;
-    display: flex;
-    color: var(--white);
+    row-gap: 1rem;
 }
 
 .grid-overlay-h1 {
     font: var(--roboto-bold-20);
-    color: var(--rose);
     margin: 0;
-    margin-bottom: 0.5rem;
 }
 
 .grid-overlay-p {
