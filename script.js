@@ -64,8 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 /*********************** CAROUSEL FUNCTION ************************/
 
-function color(z) {
-    var computedStyle = getComputedStyle(z);
-    var backgroundColor = computedStyle.backgroundColor;
-    document.body.style.backgroundColor = backgroundColor;
-}
+  function color(z) {
+    var a = getComputedStyle(z);
+    var b = a.background;
+    document.getElementsByTagName("BODY")[0].style.background= b;
+    }
