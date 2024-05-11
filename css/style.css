@@ -43,14 +43,17 @@
 }
 
 html {
-    background: var(--black);
     color: var(--white);
     font-family: var(--font-family);
-
     padding: 0;
     margin: 0;
     padding-top: 5rem;
 }
+
+body {
+    background-color: #141414;
+}
+
 
 main {
     padding: 0 5rem 0 5rem; 
@@ -904,7 +907,7 @@ fieldset {
     width: 1150px;
     height: 100vh;
     position: relative;
-    left: 75px;
+    left: 10px;
 }
 
 .slide {
@@ -955,9 +958,78 @@ fieldset {
     padding-top: 7px;
 }
 
-.white {
-    background-color: white;
+.container {
+        border: 2px solid #333;
 }
+
+.color {
+    display: table-cell;
+    width: 90%;
+    height: 130px;
+    margin-left: -1px;
+    margin-top: -1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clr1,
+.clr2,
+.clr3,
+.clr4,
+.clr5,
+.clr6,
+.clr7,
+.clr8,
+.clr9,
+.clr10,
+.clr11 {
+    position: absolute;
+    z-index: 30;
+}
+    .clr1 {
+        background: var(--black);
+    }
+
+    .clr2 {
+        background: var(--white);
+        border: 1px solid var(--light-grey);
+    }
+
+    .clr3 {
+        background: var(--rose);
+    }
+
+    .clr4 {
+        background: var(--violet);
+    }
+
+    .clr5 {
+        background: var(--light-blue);
+    }
+    .clr6 {
+        background: var(--blue);
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .clr7 {
+        background: var(--grey);
+    }
+    .clr8 {
+        background: var(--light-grey);
+    }
+
+    .clr9 {
+        background: var(--dark-grey);
+    }
+    .clr10 {
+        background: var(--gradient-rv);
+    }
+    .clr11 {
+        background: var(--gradient-bb);
+    }
+    
+    
+    
 
 
 /*CAROUSEL at Color section*/
