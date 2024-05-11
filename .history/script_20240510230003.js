@@ -117,3 +117,53 @@ const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
  * [a-zA-Z]{2,4}: com, org, edu
  */
 
+function Form() {
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    //requirements
+    const [showSubmit, setShowSubmit] = useState(false);
+
+    const handleFirstNameChange = (f) => {
+        const value = f.target.value;
+        setFirstName(value);
+        updateSubmitButton(value, lastName, email);
+    }
+
+    const handleLastNameChange = (f) => {
+        const value = f.target.value;
+        setLastName(value);
+        updateSubmitButton(firstName, value, email);
+    }
+
+    const handleEmailChange = (f) => {
+        const value = f.target.value;
+        setEmail(value);
+        updateSubmitButton(firstName, lastName, value);
+    }
+
+    const updateSubmitButton = (firstName, lastName, email) => {
+        const isValidFirstName = regexAlphabet.test(firstName) && firstName.length > 1;
+        const isValidLastName = regexAlphabet.test(lastName) && lastName.length > 1;
+        const isValidEmail = regexEmail.test(email);
+
+        setShowSubmit(isValidFirstName && isValidLastName && isValidEmail);
+    }
+
+    const handleSubmit = (f) => {
+        f.preventDefault();
+    }
+};
+
+// Function to handle form submission
+function handleSubmit(event) {
+    event.preventDefault();
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+
+    console.log("Form submitted");
+    console.log("First Name:", firstName);
+    console.log("Last Name:", lastName);
+    console.log("Email:", email);
+}

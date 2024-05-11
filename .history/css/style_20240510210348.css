@@ -25,7 +25,6 @@
 
 
     --black: #141414;
-    --overlay-bg: rgb(20, 20, 20, .5);
     --white: #FFFFFC;
     --grey: rgba(135,135,135, 0.2); /*make this 20% opacity*/
     --light-grey: #A6A7B3;
@@ -174,7 +173,7 @@ nav {
 /*********** COLOURS **********/
 .colourCatg {
     margin-top: 5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 .subhead {
@@ -816,35 +815,12 @@ input:checked + .slider:before {
 }
 
 #alert-container {
-    margin-top: 3rem;
-    width: 600px;
-    height: 150px;
-    padding: 3rem;
-    color: var(--white);
-    font: var(--roboto-bold-20);
-    border-radius: 25px;
-    background: linear-gradient(var(--black), var(--black)) padding-box,
-    linear-gradient(to right, var(--rose), var(--violet)) border-box;
-    border-radius: 25px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    display: none;
-}
-
-.alertBox {
-    color: var(--white);
-    font: var(--roboto-bold-20);
-    cursor: pointer;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 2rem;
     width: 100%;
-    height: 90%;
-    position: relative;
+    height: 200px;
+    background-color: red;
+    display: none ;
 }
-
-
 
 
 /*********** REFERENCES **********/

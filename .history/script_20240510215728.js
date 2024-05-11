@@ -104,16 +104,3 @@ function color(z) {
     var b = a.background;
     document.getElementsByTagName("BODY")[0].style.background= b;
 }
-
-/*********************** FORM ************************/
-const regexAlphabet = /^[a-zA-Z]+$/;
-/**any single alphabetical character (both uppercase and lowercase)
- * + more than 1 character
-*/
-const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-/**[a-zA-Z0-9._-]+: alphanumeric characters, dots, underscores, or hyphens BEFORE @
- * [a-zA-Z0-9.-]+: alphanumeric characters, dots, or hyphens AFTER @
- * @: +@
- * [a-zA-Z]{2,4}: com, org, edu
- */
-

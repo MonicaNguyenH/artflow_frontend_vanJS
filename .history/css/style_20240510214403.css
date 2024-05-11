@@ -174,7 +174,7 @@ nav {
 /*********** COLOURS **********/
 .colourCatg {
     margin-top: 5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 .subhead {
@@ -819,7 +819,7 @@ input:checked + .slider:before {
     margin-top: 3rem;
     width: 600px;
     height: 150px;
-    padding: 3rem;
+    padding: 20px;
     color: var(--white);
     font: var(--roboto-bold-20);
     border-radius: 25px;
@@ -828,7 +828,6 @@ input:checked + .slider:before {
     border-radius: 25px;
     border: 2px solid transparent;
     cursor: pointer;
-    display: none;
 }
 
 .alertBox {
@@ -839,9 +838,6 @@ input:checked + .slider:before {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 90%;
-    position: relative;
 }
 
 

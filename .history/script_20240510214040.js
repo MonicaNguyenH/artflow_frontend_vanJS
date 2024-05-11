@@ -29,14 +29,40 @@ function checkAnswer() {
     }
 }
 
-/**QUIZ OVERLAY APPEAR */
+/*
 function showAlert(message) {
     var alertContainer = document.getElementById("alert-container");
 
-    if (document.querySelector('.alertBox')) {
-        return; // If there's already an alert, exit the function
-    }
+    var alertBox = document.createElement("div");
+    alertBox.classList.add("alert");
+    alertBox.textContent = message;
+    alertContainer.appendChild(alertBox);
 
+    // Remove the alert after 3 seconds
+    setTimeout(function() {
+        alertBox.parentNode.removeChild(alertBox);
+    }, 3000);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var openButton = document.getElementById("openOverlay");
+    var overlay = document.getElementById("overlay");
+  
+    openButton.addEventListener("click", function() {
+      overlay.style.display = "block";
+    });
+  
+    overlay.addEventListener("click", function(event) {
+      if (event.target === overlay) {
+        overlay.style.display = "none";
+      }
+    });
+  });
+*/
+
+/**QUIZ OVERLAY APPEAR */
+function showAlert(message) {
+    var alertContainer = document.getElementById("alert-container");
     var alertBox = document.createElement("div");
     alertBox.className = "alertBox";
     alertBox.id = "alertBox";
@@ -60,7 +86,7 @@ function showAlert(message) {
 /**QUIZ OVERLAY ONCLICK DISPLAY */
 document.addEventListener("DOMContentLoaded", function() {
     var openButton = document.getElementById("open-overlay");
-    var overlay = document.getElementById("alert-container");
+    var overlay = document.getElementById("alert-container alertBox");
   
     openButton.addEventListener("click", function() {
       overlay.style.display = "block";
@@ -104,16 +130,3 @@ function color(z) {
     var b = a.background;
     document.getElementsByTagName("BODY")[0].style.background= b;
 }
-
-/*********************** FORM ************************/
-const regexAlphabet = /^[a-zA-Z]+$/;
-/**any single alphabetical character (both uppercase and lowercase)
- * + more than 1 character
-*/
-const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-/**[a-zA-Z0-9._-]+: alphanumeric characters, dots, underscores, or hyphens BEFORE @
- * [a-zA-Z0-9.-]+: alphanumeric characters, dots, or hyphens AFTER @
- * @: +@
- * [a-zA-Z]{2,4}: com, org, edu
- */
-
