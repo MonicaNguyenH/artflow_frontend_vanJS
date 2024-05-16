@@ -117,3 +117,51 @@ const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
  * [a-zA-Z]{2,4}: com, org, edu
  */
 
+document.addEventListener("DOMContentLoaded", function () {
+  const submitButton = document.querySelector(".main-form .submitButton");
+  const successMsg = document.querySelector(".success");
+  const mainForm = document.querySelector(".main-form");
+  const successButton = document.querySelector(".success button");
+
+  submitButton.addEventListener("click", () => {
+    const validation = formValidation();
+    if (validation == true) {
+      successMsg.style.display = "flex";
+      mainForm.style.display = "none";
+    }
+  })
+
+  successButton.addEventListener("click", () => {
+    successMsg.style.display = "none";
+    mainForm.style.display = "block";
+  })
+});
+
+function formValidation() {
+  const formInputs = document.querySelectorAll(".main-form input");
+  const errorMsg = document.querySelector(".error");
+  let validated;
+  formInputs.forEach((input) => {
+    if (input.value.length < 1) {
+      errorMsg.style.display = "block";
+      validated = false;
+      return;
+    } else {
+      errorMsg.style.display = "none";
+      validated = true;
+      return;
+    }
+  }) 
+  return validated;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const switchToggle = document.querySelector(".switch input");
+  switchToggle.addEventListener("change", () => {
+    setTimeout(() => {
+      window.alert("Noooo don't click me :(");
+      switchToggle.checked = false;
+    }, 400)
+  })
+})
+
