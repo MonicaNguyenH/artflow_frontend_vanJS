@@ -81,7 +81,7 @@ nav {
 }
 
 .navBar {
-    column-gap: 20%;
+    column-gap: 50px;
 }
 
 .list {
@@ -922,8 +922,8 @@ fieldset {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .l-col-5 {
-        grid-template-columns: repeat(5, 1fr);
+    .l-col-4 {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .l-col-7 {

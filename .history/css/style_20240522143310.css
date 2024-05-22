@@ -80,10 +80,6 @@ nav {
     z-index: 100; 
 }
 
-.navBar {
-    column-gap: 20%;
-}
-
 .list {
     padding: 0 5rem 0 5rem;
 }
@@ -104,7 +100,6 @@ nav {
 .listItem {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
 
 #logoNav a {
@@ -922,8 +917,8 @@ fieldset {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .l-col-5 {
-        grid-template-columns: repeat(5, 1fr);
+    .l-col-4 {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .l-col-7 {
