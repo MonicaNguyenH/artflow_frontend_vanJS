@@ -20,6 +20,7 @@
                 <li class="listItem rol"><a href="#typography">Typography</a></li>
                 <li class="listItem rol"><a href="#grid">Grid Layout</a></li>
                 <li class="listItem rol"><a href="#iconography">Iconography</a></li>
+                <li class="listItem rol"><a href="#Drawing">Drawing</a></li>
                 <li class="listItem rol"><a href="#references">References</a></li>
             </div>
         </ul>
@@ -228,6 +229,29 @@
             </div>
             <div class="reference-list">
                 <p>Calendar</p>
+            </div>
+        </section>
+
+        <div class="subhead">
+            <div class="subMark"></div>
+            <p class="subCaption">Drawing</p>
+        </div>
+        <section id="drawing">
+            <canvas id="canvas"></canvas>
+            <div class="nav">
+                <div class="clr" data-clr="#000"></div>
+                <div class="clr" data-clr="red"></div>
+                <div class="clr" data-clr="orange"></div>
+                <div class="clr" data-clr="yellow"></div>
+                <div class="clr" data-clr="green"></div>
+                <div class="clr" data-clr="blue"></div>
+                <div class="clr" data-clr="purple"></div>
+                <div class="clr" data-clr="#fff"></div>
+                <button class="clear">Clear</button>
+                <button class="save">Save</button>
+                <input type="color" value="#FFFFFF" id="favcolor">
+                <input type="range" name="ageInputName" id="ageInputId" value="5" min="1" max="10" oninput="ageOutputId.value = ageInputId.value">
+                <output id="ageOutputId"></output>
             </div>
         </section>
 
