@@ -178,11 +178,9 @@ nav {
 }
 
 /*********** QR **********/
-#QRcode {
-    width: 150px;
+.QRcode {
+    width: 500px;
     height: auto;
-    margin-top: 1rem;
-    cursor: pointer;
 }
 
 /*********** COLOURS **********/
