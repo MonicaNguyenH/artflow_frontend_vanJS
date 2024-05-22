@@ -773,7 +773,7 @@ input:checked + .slider:before {
     display: none;
 }
 
-#submitButton {
+.submitButton {
     width: 100%;
     display: flex;
     align-items: center;
